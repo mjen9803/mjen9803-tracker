@@ -1,0 +1,67 @@
+/* Global Style */
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #76798c;
+    
+}
+
+/* Header Style */
+
+header {
+    background-color: #76798c;
+    text-align: center;
+
+}
+
+h1 {
+    margin: 30;
+}
+
+/* Set the box-sizing property to the .container class to border-box so that padding and borders are included in container's W&H */
+
+.container {
+    box-sizing: border-box;
+}
+
+.container-1 {
+    max-width: 800ox; 
+    margin: 10px ; 
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+
+}
+
+/* Margin-top is set to a negative value on second container to = padding used on first container (make it overlap) */
+/* Margin-left and margin-right is set to 10px to even out with container 1 */
+/* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
+
+.container-2 {
+    max-width: 800ox; 
+    margin-top: -20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #cecccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #cecccc; 
+
+}
+
+h2 {
+    margin: 30;
+}
+
+/* Media Queries */
+@media (min-device-width: 600px) {
+
+}
+
+@media (max-device-width: 800px) {
+}
