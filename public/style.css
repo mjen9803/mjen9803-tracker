@@ -1,18 +1,21 @@
 /* Global Style */
+/* Letter-spacing property used to create space between letters - increase readability and accessibility */
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     background-color: #76798c;
+    letter-spacing: 0.1em;
     
 }
 
 /* Header Style */
 
 header {
+    color: #f2f2f2;
     background-color: #76798c;
     text-align: center;
 
@@ -20,6 +23,10 @@ header {
 
 h1 {
     margin: 30;
+}
+
+h2 {
+    text-align: center;
 }
 
 /* Set the box-sizing property to the .container class to border-box so that padding and borders are included in container's W&H */
@@ -31,7 +38,7 @@ h1 {
 .container-1 {
     max-width: 800ox; 
     margin: 10px ; 
-    padding: 20px;
+    padding: 5px;
     background-color: #f2f2f2;
     border-radius: 10px;
 
@@ -42,7 +49,6 @@ h1 {
 /* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
 
 .container-2 {
-    max-width: 800ox; 
     margin-top: -20px ;
     margin-left: 10px;
     margin-right: 10px;
@@ -56,6 +62,20 @@ h1 {
 
 h2 {
     margin: 30;
+}
+
+.button {
+
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    /* padding: 12px 24px; */
+    text-align: center;
+    text-decoration: underline;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
 }
 
 /* Media Queries */
