@@ -105,6 +105,10 @@ h2 {
     cursor: pointer;
 }
 
+.classList {
+    list-style: none;
+}
+
 /* Media Queries */
 @media (min-device-width: 600px) {
 
