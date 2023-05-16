@@ -35,7 +35,12 @@ h2 {
     box-sizing: border-box;
 }
 
+/* Display & Grid-template-columns function allow the buttons to be distributed evenly along the page allowing for dynamic and responsive design */
+
 .container-1 {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
     max-width: 800ox; 
     margin: 10px ; 
     padding: 5px;
@@ -64,8 +69,30 @@ h2 {
     margin: 30;
 }
 
+/* 'Day Button' CSS - Need to fix this */
+
 .button {
 
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block; 
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
+}
+
+/* Hover State of 'Day Button' CSS */
+
+.button:hover {
+    background-color: #cecccc;
+}
+
+/* 'Hide Button' CSS - Need to fix this */
+
+.closeButton {
     background-color: #f2f2f2;
     border: none;
     color: #3d477a;
