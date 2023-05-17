@@ -30,24 +30,24 @@ h2 {
     margin: 30;
 }
 
-/* Set the box-sizing property to the .container class to border-box so that padding and borders are included in container's W&H */
+/* Set the box-sizing property to the .containers class to border-box so that padding and borders are included in container's W&H */
+/* Parent Container */
 
-.container {
-    box-sizing: border-box;
+.containers {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* Display & Grid-template-columns function allow the buttons to be distributed evenly along the page allowing for dynamic and responsive design */
+/* Child Container (1) */
 
 .container-1 {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    margin: 10px ; 
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
     background-color: #f2f2f2;
     border-radius: 10px;
+    flex-direction: row;
 
 }
 
@@ -58,11 +58,10 @@ h2 {
     background-color: #f2f2f2;
     border: none;
     color: #3d477a;
-    text-align: center;
     text-decoration: underline;
-    display: inline-block; 
     font-size: 16px;
-    margin: 20px; 
+    margin: 20 85px; 
+    padding: 10px 25px;
     cursor: pointer;
 }
 
@@ -72,11 +71,21 @@ h2 {
     background-color: #cecccc;
 }
 
+/* On Click Permanent Hover State */
+
+.clicked {
+    background-color: #cecccc;
+}
+
 /* Margin-top is set to a negative value on second container to = padding used on first container (make it overlap) */
 /* Margin-left and margin-right is set to 10px to even out with container 1 */
 /* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
+/* Child Container (2) */
 
 .container-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
     display: flex;
     margin-top: -20px ;
     margin-left: 10px;
@@ -91,6 +100,7 @@ h2 {
 
 /* Below is the CSS for the checklist writing (split into 5 as some days have more letters than others) */
 /* Flex is Used to make the checklists responsive when the screen size is minimized */
+/* CSS classes are seperated as properties are different per list */
 
 .classList {
     list-style: none;
@@ -139,6 +149,7 @@ h2 {
 
 /* Below is CSS for every individual checklist, this was necessary so that they were lined up evenly and in the order I wanted */
 /* Each checkbox is placed in container to make them inline with the text next to them */
+/* CSS classes are seperated as properties are different per checkbox */
 
 .boxImage1-Container {
     display: inline-flex;
@@ -373,6 +384,7 @@ h2 {
     color: #3d477a;
     text-decoration: underline;
     font-size: 16px;
+    margin: 20px;
     cursor: pointer;
 }
 
@@ -419,6 +431,31 @@ h2 {
 /* Below is the CSS code allowing the hide buttons to be centered */
 
 
+
+/* Container for the Submit Button (3) */
+/* Child Container (3) */
+
+.container-3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 110px;
+    margin: 100px;
+    margin-top: -20x;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: inline-block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #cecccc; 
+
+}
+
 /* Media Queries */
 /* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
@@ -437,5 +474,12 @@ h2 {
 @media screen and (max-width: 800px) {
     .container-2 {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
     }
 }

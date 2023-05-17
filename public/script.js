@@ -50,6 +50,13 @@ checklistButton5.addEventListener("click", function() {
     checklist5.style.display = "block";
 });
 
+// Declaring Event Listeners for 'On Click' interaction of permanent 'Hover State'
+
+function toggleColor() {
+    var button = document.getElementById('checklistButton');
+    button.classList.toggle('clicked');
+}
+
 // Declaring Event Listeners for 'On Click' interaction of 'Hide Button'
 
 closeButton.addEventListener("click", function() {
