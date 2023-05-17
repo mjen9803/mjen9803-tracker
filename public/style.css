@@ -27,6 +27,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin: 30;
 }
 
 /* Set the box-sizing property to the .container class to border-box so that padding and borders are included in container's W&H */
@@ -43,33 +44,11 @@ h2 {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
-    max-width: 800ox; 
     margin: 10px ; 
     padding: 5px;
     background-color: #f2f2f2;
     border-radius: 10px;
 
-}
-
-/* Margin-top is set to a negative value on second container to = padding used on first container (make it overlap) */
-/* Margin-left and margin-right is set to 10px to even out with container 1 */
-/* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
-
-.container-2 {
-    display: flex;
-    margin-top: -20px ;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 20px;
-    background-color: #cecccc;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top: 2px solid #cecccc; 
-
-}
-
-h2 {
-    margin: 30;
 }
 
 /* 'Day Button' CSS - Need to fix this */
@@ -93,28 +72,73 @@ h2 {
     background-color: #cecccc;
 }
 
-/* 'Hide Button' CSS - Need to fix this */
+/* Margin-top is set to a negative value on second container to = padding used on first container (make it overlap) */
+/* Margin-left and margin-right is set to 10px to even out with container 1 */
+/* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
 
-.closeButton {
-    background-color: #f2f2f2;
-    border: none;
-    color: #3d477a;
-    /* padding: 12px 24px; */
-    text-align: center;
-    text-decoration: underline;
-    /* display: inline-block; */
-    font-size: 16px;
-    margin: 20px; 
-    cursor: pointer;
+.container-2 {
+    display: flex;
+    margin-top: -20px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #cecccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #cecccc; 
+
 }
+
+/* Below is the CSS for the checklist writing (split into 5 as some days have more letters than others) */
+/* Flex is Used to make the checklists responsive when the screen size is minimized */
 
 .classList {
     list-style: none;
     list-style-type: none;
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     flex: 1 1 200px;
     padding: 12;
 }
+
+.classList2 {
+    list-style: none;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex: 1 1 200px;
+    padding: 12;
+}
+
+.classList3 {
+    list-style: none;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 60px;
+    flex: 1 1 200px;
+    padding: 12;
+}
+
+.classList4 {
+    list-style: none;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 60px;
+    flex: 1 1 200px;
+    padding: 12;
+}
+
+.classList5 {
+    list-style: none;
+    list-style-type: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    flex: 1 1 200px;
+    padding: 12;
+}
+
+/* Below is CSS for every individual checklist, this was necessary so that they were lined up evenly and in the order I wanted */
+/* Each checkbox is placed in container to make them inline with the text next to them */
 
 .boxImage1-Container {
     display: inline-flex;
@@ -341,7 +365,62 @@ h2 {
     transform: scale(1.5);
 }
 
+/* 'Hide Button' CSS - Need to fix this */
+
+.closeButton {
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.closeButton2 {
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
+}
+
+.closeButton3 {
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
+}
+
+.closeButton4 {
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
+}
+
+.closeButton5 {
+    background-color: #f2f2f2;
+    border: none;
+    color: #3d477a;
+    text-decoration: underline;
+    font-size: 16px;
+    margin: 20px; 
+    cursor: pointer;
+}
+
+/* Below is the CSS code allowing the hide buttons to be centered */
+
+
 /* Media Queries */
+/* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
 
 }
@@ -349,13 +428,13 @@ h2 {
 @media (max-device-width: 800px) {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .container-2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
     .container-2 {
         grid-template-columns: 1fr;
     }
