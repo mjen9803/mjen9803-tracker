@@ -33,6 +33,8 @@ h2 {
 
 .container {
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Display & Grid-template-columns function allow the buttons to be distributed evenly along the page allowing for dynamic and responsive design */
@@ -54,9 +56,6 @@ h2 {
 /* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
 
 .container-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
     display: flex;
     margin-top: -20px ;
     margin-left: 10px;
@@ -113,6 +112,8 @@ h2 {
     list-style: none;
     list-style-type: none;
     margin-right: 100px;
+    flex: 1 1 200px;
+    padding: 12;
 }
 
 .boxImage1-Container {
