@@ -54,6 +54,10 @@ h2 {
 /* Border-bottom-left/right-radius is set to make the top of the container straight and the bottom of the container rounded */
 
 .container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    display: flex;
     margin-top: -20px ;
     margin-left: 10px;
     margin-right: 10px;
@@ -107,6 +111,233 @@ h2 {
 
 .classList {
     list-style: none;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+.boxImage1-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage1 {
+    transform: scale(1.5);
+}
+
+.boxImage2-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage2 {
+    transform: scale(1.5);
+}
+
+.boxImage3-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage3 {
+    transform: scale(1.5);
+}
+
+.boxImage4-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage4 {
+    transform: scale(1.5);
+}
+
+.boxImage5-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage5 {
+    transform: scale(1.5);
+}
+
+.boxImage6-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage6 {
+    transform: scale(1.5);
+}
+
+.boxImage7-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage7 {
+    transform: scale(1.5);
+}
+
+.boxImage8-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage8 {
+    transform: scale(1.5);
+}
+
+.boxImage9-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage9 {
+    transform: scale(1.5);
+}
+
+.boxImage10-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage10 {
+    transform: scale(1.5);
+}
+
+.boxImage11-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage11 {
+    transform: scale(1.5);
+}
+
+.boxImage12-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage12 {
+    transform: scale(1.5);
+}
+
+.boxImage13-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage13 {
+    transform: scale(1.5);
+}
+
+.boxImage14-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage14 {
+    transform: scale(1.5);
+}
+
+.boxImage15-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage15 {
+    transform: scale(1.5);
+}
+
+.boxImage16-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage16 {
+    transform: scale(1.5);
+}
+
+.boxImage17-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage17 {
+    transform: scale(1.5);
+}
+
+.boxImage18-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage18 {
+    transform: scale(1.5);
+}
+
+.boxImage19-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage19 {
+    transform: scale(1.5);
+}
+
+.boxImage20-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage20 {
+    transform: scale(1.5);
+}
+
+.boxImage21-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage21 {
+    transform: scale(1.5);
+}
+
+.boxImage22-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage22 {
+    transform: scale(1.5);
+}
+
+.boxImage23-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage23 {
+    transform: scale(1.5);
+}
+
+.boxImage24-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage24 {
+    transform: scale(1.5);
+}
+
+.boxImage25-Container {
+    display: inline-flex;
+    align-items: center;
+}
+
+#boxImage25 {
+    transform: scale(1.5);
 }
 
 /* Media Queries */
@@ -115,4 +346,16 @@ h2 {
 }
 
 @media (max-device-width: 800px) {
+}
+
+@media screen and (max-width: 768px) {
+    .container-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-2 {
+        grid-template-columns: 1fr;
+    }
 }

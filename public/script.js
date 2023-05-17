@@ -1,3 +1,8 @@
+// Declaring Constant Variables for Actual Checkboxes
+
+const box = document.getElementById("boxImage");
+const result = document.getElementById("result");
+
 // Declaring Constant Variables for 'Day Buttons' 
 
 const checklistButton = document.getElementById("checklistButton");
@@ -67,6 +72,15 @@ closeButton5.addEventListener("click", function() {
     checklist5.style.display = "none";
 });
 
+// Declaring Event Listeners for 'On Click' interaction of actual checkboxes
+
+box.addEventListener("change", function() {
+    if (box.checked) {
+        result.textContent = "";
+    } else {
+        result.textContent = "";
+    }
+});
 
 
 
