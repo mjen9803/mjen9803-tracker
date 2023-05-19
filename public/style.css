@@ -441,8 +441,6 @@ h2 {
     flex-wrap: wrap;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 110px;
-    margin: 100px;
     margin-top: -20x;
     margin-left: 10px;
     margin-right: 10px;
@@ -452,8 +450,6 @@ h2 {
     display: inline-block;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-top: 2px solid #cecccc; 
-
 }
 
 /* Media Queries */
