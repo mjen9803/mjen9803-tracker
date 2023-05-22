@@ -27,6 +27,11 @@ const closeButton3 = document.getElementById("closeButton3");
 const closeButton4 = document.getElementById("closeButton4");
 const closeButton5 = document.getElementById("closeButton5");
 
+// Declaring Constant Variables for the Metrics
+const openPopupButton = document.getElementById('openPopup');
+const popupContainer = document.getElementById('popupContainer');
+const closePopupButton = document.getElementById('closePopup');
+
 // Attemped to use Query Selectors to create more succinct code here however after a lot of trial and error it did not want to function accordingly 15/05/23
 // Declaring Event Listeners for 'On Click' interaction of 'Day Button'
 
@@ -79,16 +84,35 @@ closeButton5.addEventListener("click", function() {
     checklist5.style.display = "none";
 });
 
-// Declaring Event Listeners for 'On Click' interaction of actual checkboxes
-
-box.addEventListener("change", function() {
-    if (box.checked) {
-        result.textContent = "";
-    } else {
-        result.textContent = "";
-    }
+// Declaring Event Listeners for 'On Click' interaction with Metrics Container
+openPopupButton.addEventListener('click', function() {
+    popupContainer.style.display = 'block';
 });
 
+closePopupButton.addEventListener('click', function() {
+    popupContainer.style.display = 'none';
+});
 
+// Metrics Calculations
 
+function calculate() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var count = 0;
 
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            count++;
+        }
+    });
+
+    var result1 = count * 450;
+    var result2 = count * 400;
+    var result3 = count * 750 / 1000;
+
+    document.getElementById('result1').textContent = 'You will burn approximately ' + result1 + ' calories this week!';
+    document.getElementById('result2').textContent = 'You will complete approximately ' + result2 + ' reps this week!';
+    document.getElementById('result3').textContent = 'You will run approximately ' + result3 + ' kms this week!';
+
+}
+
+// localStorage.setItem("bookingDay", "Monday")
