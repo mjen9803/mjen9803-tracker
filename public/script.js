@@ -28,9 +28,15 @@ const closeButton4 = document.getElementById("closeButton4");
 const closeButton5 = document.getElementById("closeButton5");
 
 // Declaring Constant Variables for the Metrics
+
 const openPopupButton = document.getElementById('openPopup');
 const popupContainer = document.getElementById('popupContainer');
 const closePopupButton = document.getElementById('closePopup');
+const popup2 = document.getElementById('popupContainer2');
+const openPopup2Button = document.getElementById('closePopup2');
+const showPopup2 = () => {
+    popup2.style.display = 'block';
+};
 
 // Attemped to use Query Selectors to create more succinct code here however after a lot of trial and error it did not want to function accordingly 15/05/23
 // Declaring Event Listeners for 'On Click' interaction of 'Day Button'
@@ -93,6 +99,10 @@ closePopupButton.addEventListener('click', function() {
     popupContainer.style.display = 'none';
 });
 
+openPopup2.addEventListener('click', function() {
+    popupContainer2.style.display = 'block';
+});
+
 // Metrics Calculations
 
 function calculate() {
@@ -113,6 +123,18 @@ function calculate() {
     document.getElementById('result2').textContent = 'You will complete approximately ' + result2 + ' reps this week!';
     document.getElementById('result3').textContent = 'You will run approximately ' + result3 + ' kms this week!';
 
+}
+
+// Pop Up Container 3 When Checkbox Selected
+
+function togglePopup(checkbox) {
+    var container3 = document.getElementById("container3");
+
+    if (checkbox.checked) {
+        container3.style.display = "block";
+    } else {
+        container3.style.display = "none";
+    }
 }
 
 // localStorage.setItem("bookingDay", "Monday")

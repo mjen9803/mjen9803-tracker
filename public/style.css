@@ -22,12 +22,21 @@ header {
 }
 
 h1 {
-    margin: 30;
+    margin: 50;
 }
 
-h2 {
+.heading-container {
+    background-color: #cecccc;
+    margin: 10px;
     text-align: center;
-    margin: 30;
+    border-radius: 10px 10px 0 0;
+    flex-direction: row; 
+}
+
+.heading-container h2 {
+    text-align: center;
+    margin: -20;
+    padding: 20px;
 }
 
 /* Set the box-sizing property to the .containers class to border-box so that padding and borders are included in container's W&H */
@@ -46,7 +55,6 @@ h2 {
     justify-content: center;
     margin: 10px;
     background-color: #f2f2f2;
-    border-radius: 10px;
     flex-direction: row;
 
 }
@@ -72,8 +80,9 @@ h2 {
 }
 
 /* On Click Permanent Hover State */
+/* This function is not currently working - would have loved this to work to improve accessibility - for future developments I would have spent more time trying to fix this */
 
-.clicked {
+.Button.clicked {
     background-color: #cecccc;
 }
 
@@ -433,9 +442,8 @@ h2 {
 /* Child Container (3) */
 
 .container-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+    position: relative;
     margin-left: 600px;
     margin-right: 600px;
     padding: 20px;
@@ -446,6 +454,10 @@ h2 {
 }
 
 .submitButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: transparent;
     border: none;
     color: #3d477a;
@@ -453,7 +465,10 @@ h2 {
     cursor: pointer;
 }
 
-#popupContainer {
+#popupContainer, #popupContainer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     display: none;
     position: fixed;
     top: 0;
@@ -464,7 +479,7 @@ h2 {
     z-index: 999;
 }
 
-#popupContent {
+#popupContent, #popupContent2 {
     display: grid;
     place-items: center;
     height: 50vh;
@@ -478,6 +493,15 @@ h2 {
 }
 
 #closePopup {
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    color: #3d477a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#openPopup2 {
     margin-bottom: 30px;
     background-color: transparent;
     border: none;
@@ -513,3 +537,16 @@ h2 {
         align-items: center;
     }
 }
+
+@media (max-width: 800px) {
+    .container-3 {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-3 {
+        padding: 2px;
+    }
+}
+
