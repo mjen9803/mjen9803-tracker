@@ -137,4 +137,10 @@ function togglePopup(checkbox) {
     }
 }
 
+// Refresh button on Confirmation Page
+
+document.getElementById("refreshButton").addEventListener("click", function() {
+    location.reload();
+});
+
 // localStorage.setItem("bookingDay", "Monday")
