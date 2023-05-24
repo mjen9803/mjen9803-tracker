@@ -465,10 +465,11 @@ h1 {
     cursor: pointer;
 }
 
+.popup {
+    overflow: auto;
+}
+
 #popupContainer, #popupContainer2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
     display: none;
     position: fixed;
     top: 0;
@@ -493,6 +494,8 @@ h1 {
 }
 
 #closePopup {
+    float: left;
+    margin-right: 10px;
     margin-bottom: 30px;
     background-color: transparent;
     border: none;
@@ -501,13 +504,36 @@ h1 {
     cursor: pointer;
 }
 
+#closePopup:hover {
+    background-color: #cecccc;   
+}
+
 #openPopup2 {
+    float: left;
+    margin-right: 10px;
     margin-bottom: 30px;
     background-color: transparent;
     border: none;
     color: #3d477a;
     font-size: 16px;
     cursor: pointer;
+}
+
+#openPopup2:hover {
+    background-color: #cecccc;   
+}
+
+#refreshButton {
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    color: #3d477a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#refreshButton:hover {
+    background-color: #cecccc;   
 }
 
 /* Media Queries */

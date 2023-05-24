@@ -143,4 +143,56 @@ document.getElementById("refreshButton").addEventListener("click", function() {
     location.reload();
 });
 
-// localStorage.setItem("bookingDay", "Monday")
+// Local Storage Elements 
+
+// Saves checkbox inputs to local storage
+
+function saveCheckboxStateToLocalStorage(checkboxId, isChecked) {
+
+// Picks up existing states from local storage
+
+    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || [];
+
+    checkboxStates[checkboxID] = isChecked;
+
+    localStorage.setItem('checkboxStates', JSON.stringify(checkboxStates));
+
+}
+
+// Function to pick up checkbox states from local storage
+
+function getCheckboxStateFromLocalStorage(checkboxID) {
+    
+    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
+
+    return checkboxStates[checkboxId] || false;
+}
+
+// Function to display selection history in terminal
+
+function displaySelectionHistory() {
+
+    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
+
+    for (var checkboxId in checkboxStates) {
+        if (checkboxStates.hasOwnProperty(checkboxId)) {
+            var isChecked = checkboxStates[checkboxId];
+
+            var checkboxElement = document.getElementById(checkboxId);
+            checkboxElement.checked = isChecked;
+        }
+    }
+}
+
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function(event) {
+        var checkboxId = event.target.id;
+        var isChecked = event.target.checked;
+
+        saveCheckboxStateToLocalStorage(checkboxId, isChecked);
+    });
+});
+
+displaySelectionHistory();
+
