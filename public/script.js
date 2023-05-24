@@ -185,3 +185,69 @@ checkboxes.forEach(function(checkbox) {
 window.addEventListener('load', loadSelection);
 
 });
+
+// Local Storage Element 2
+// Track which checkboxes are selected and provide the user with a list of classes booked
+// Display list on pop up
+
+// Stores recently clicked checkboxes (checkbox value & label)
+function trackCheckboxSelection() {
+    let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
+
+// All elements with checkbox input variable
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+// Storing in local storage
+
+checkboxes.forEach(function (checkbox) {
+    let checkboxValue = checkbox.value;
+    let checkboxLabel = checkbox.parentNode.textContent.trim();
+    let checkboxData = { value: checkboxValue, label: checkboxLabel };
+
+    recentlyClickedCheckboxes.unshift(checkboxData);
+});
+
+localStorage.setItem('recentlyClickedCheckboxes', JSON.stringify(recentlyClickedCheckboxes));
+
+// Function to display pop up for this information 
+// Function should retrieve from local storage and display in pop  up
+
+function displayRecentlyClickedCheckboxes() {
+    let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
+
+    let popupContent3 = document.createElement('div');
+    popupContent3.classList.add('popup-content3');
+
+    if (recentlyClickedCheckboxes.length > 0) {
+        let title = document.createElement('h2');
+        title.textContent = 'Recently Booked Classes';
+
+        let checkboxList = document.createElement('ul');
+
+        recentlyClickedCheckboxes.forEach(function (checkboxData) {
+            let listItem = document.createElement('li');
+            listItem.textContent = checkboxData.label;
+
+            checkboxList.appendChild(listItem);
+        });
+
+        popupContent3.appendChild(title);
+        popupContent2.appendChild(checkboxList);
+    }   else {
+        popupContent3.textContent = 'No Recently Booked Classes';
+    }
+
+// Pop Up 3
+
+    let popup3 = document.createElement('div');
+    popup3.classList.add('popup3');
+    popup3.appendChild(popupContent3);
+
+    document.body.appendChild(popup3);
+}
+
+// Event Listener for 'Bookings' Button
+
+document.getElementById('showBookingsButton').addEventListener('click', displayRecentlyClickedCheckboxes);
+
+}
