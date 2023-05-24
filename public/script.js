@@ -176,6 +176,8 @@ function loadSelection() {
 
 }
 
+// Event Listener for Local Storage Element 1
+
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('click', saveSelection);
