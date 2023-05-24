@@ -143,56 +143,43 @@ document.getElementById("refreshButton").addEventListener("click", function() {
     location.reload();
 });
 
-// Local Storage Elements 
+// Local Storage Element 1 
+// If the user accidentally refreshes the web app before booking their classes - local storage will remember what the user has selected.
+// This means users can return to this page whenever they would like and can see the classes they have booked.
 
-// Saves checkbox inputs to local storage
+// Saves checkbox selection to local storage
 
-function saveCheckboxStateToLocalStorage(checkboxId, isChecked) {
-
-// Picks up existing states from local storage
-
-    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || [];
-
-    checkboxStates[checkboxID] = isChecked;
-
-    localStorage.setItem('checkboxStates', JSON.stringify(checkboxStates));
-
-}
-
-// Function to pick up checkbox states from local storage
-
-function getCheckboxStateFromLocalStorage(checkboxID) {
-    
-    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
-
-    return checkboxStates[checkboxId] || false;
-}
-
-// Function to display selection history in terminal
-
-function displaySelectionHistory() {
-
-    let checkboxStates = JSON.parse(localStorage.getItem('checkboxStates')) || {};
-
-    for (var checkboxId in checkboxStates) {
-        if (checkboxStates.hasOwnProperty(checkboxId)) {
-            var isChecked = checkboxStates[checkboxId];
-
-            var checkboxElement = document.getElementById(checkboxId);
-            checkboxElement.checked = isChecked;
+function saveSelection() {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var selectedCheckboxes = [];
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            selectedCheckboxes.push(checkbox.id);
         }
-    }
+    });
+    localStorage.setItem('checkboxSelection', JSON.stringify(selectedCheckboxes));
+}
+
+// Loads checkbox selection from Local Storage 
+
+function loadSelection() {
+    var savedSelection = localStorage.getItem('checkboxSelection');
+    if (savedSelection) {
+        var selectedCheckboxes = JSON.parse(savedSelection);
+        selectedCheckboxes.forEach(function(id) {
+            var checkbox = document.getElementById(id);
+            if (checkbox) {
+                checkbox.checked = true;
+            }
+        });
+    }   
+
 }
 
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function(event) {
-        var checkboxId = event.target.id;
-        var isChecked = event.target.checked;
+        checkbox.addEventListener('click', saveSelection);
 
-        saveCheckboxStateToLocalStorage(checkboxId, isChecked);
-    });
+window.addEventListener('load', loadSelection);
+
 });
-
-displaySelectionHistory();
-
