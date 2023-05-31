@@ -444,13 +444,17 @@ h1 {
 .container-3 {
     display: none;
     position: relative;
-    margin-left: 600px;
-    margin-right: 600px;
     padding: 20px;
     background-color: #f2f2f2;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top: 2px solid #cecccc; 
+    width: 100%;
+    width: 200px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .submitButton {
@@ -463,6 +467,8 @@ h1 {
     color: #3d477a;
     font-size: 16px;
     cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .popup {
@@ -536,6 +542,60 @@ h1 {
     background-color: #cecccc;   
 }
 
+#showBookingsButton {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    color: #3d477a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#showBookingsButton:hover {
+    background-color: #cecccc;   
+}
+
+#popupContainer, #popupContainer3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#popupContent, #popupContent3 {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+    background-color: #fff;
+    width: 700px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#closePopup3 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    color: #3d477a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#closePopup3:hover {
+    background-color: #cecccc;   
+}
+
 /* Media Queries */
 /* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
@@ -564,15 +624,18 @@ h1 {
     }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .container-3 {
-        padding: 5px;
+        padding: 20px;
+    }
+
+    .submitButton {
+        padding: 20px;
     }
 }
 
-@media (max-width: 600px) {
-    .container-3 {
-        padding: 2px;
+@media screen and (min-width: 1200px) {
+    .submitButton {
+        padding: 20px;
     }
 }
-

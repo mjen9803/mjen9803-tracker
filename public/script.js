@@ -125,7 +125,7 @@ function calculate() {
 
 }
 
-// Pop Up Container 3 When Checkbox Selected
+// Container 3 When Checkbox Selected
 
 function togglePopup(checkbox) {
     var container3 = document.getElementById("container3");
@@ -143,6 +143,39 @@ document.getElementById("refreshButton").addEventListener("click", function() {
     location.reload();
 });
 
+// Pop Up 3 Bookings List
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    function openPopup(popupId) {
+
+        let popups = document.querySelectorAll('.popup');
+        popups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+
+        let popup = document.getElementById('popupContainer3');
+        if (popup) {
+            popup.style.display = 'block';
+        }
+
+    }
+
+ document.getElementById('showBookingsButton').addEventListener('click', function() {
+    openPopup('popupContainer3');
+ });
+
+
+
+document.getElementById('closePopup3').addEventListener('click', function() {
+    let popup = document.getElementById('popupContainer3');
+    if (popup) {
+        popup.style.display = 'none';
+    }
+});
+
+});
+
 // Local Storage Element 1 
 // If the user accidentally refreshes the web app before booking their classes - local storage will remember what the user has selected.
 // This means users can return to this page whenever they would like and can see the classes they have booked.
@@ -157,7 +190,7 @@ function saveSelection() {
             selectedCheckboxes.push(checkbox.id);
         }
     });
-    localStorage.setItem('checkboxSelection', JSON.stringify(selectedCheckboxes));
+    localStoragea.setItem('checkboxSelection', JSON.stringify(selectedCheckboxes));
 }
 
 // Loads checkbox selection from Local Storage 
@@ -182,72 +215,103 @@ var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 checkboxes.forEach(function(checkbox) {
         checkbox.addEventListener('click', saveSelection);
 
+});
+
 window.addEventListener('load', loadSelection);
 
-});
+// // Local Storage Element 2
+// // Track which checkboxes are selected and provide the user with a list of classes booked
+// // Display list on pop up
 
-// Local Storage Element 2
-// Track which checkboxes are selected and provide the user with a list of classes booked
-// Display list on pop up
+// // Stores recently clicked checkboxes (checkbox value & label)
+// function trackCheckboxSelection() {
+//     let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
 
-// Stores recently clicked checkboxes (checkbox value & label)
-function trackCheckboxSelection() {
-    let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
+// // All elements with checkbox input variable
+//     let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
-// All elements with checkbox input variable
-    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+// // Storing in local storage
 
-// Storing in local storage
+// checkboxes.forEach(function (checkbox) {
+//     let checkboxValue = checkbox.value;
+//     let checkboxLabel = checkbox.parentNode.textContent.trim();
+//     let checkboxData = { value: checkboxValue, label: checkboxLabel };
 
-checkboxes.forEach(function (checkbox) {
-    let checkboxValue = checkbox.value;
-    let checkboxLabel = checkbox.parentNode.textContent.trim();
-    let checkboxData = { value: checkboxValue, label: checkboxLabel };
+//     recentlyClickedCheckboxes.unshift(checkboxData);
+// });
 
-    recentlyClickedCheckboxes.unshift(checkboxData);
-});
+// localStorage.setItem('recentlyClickedCheckboxes', JSON.stringify(recentlyClickedCheckboxes));
 
-localStorage.setItem('recentlyClickedCheckboxes', JSON.stringify(recentlyClickedCheckboxes));
+// displayRecentlyClickedCheckboxes();
 
-// Function to display pop up for this information 
-// Function should retrieve from local storage and display in pop  up
+// }
 
-function displayRecentlyClickedCheckboxes() {
-    let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
+// // Function to display pop up for this information 
+// // Function should retrieve from local storage and display in pop  up
 
-    let popupContent3 = document.createElement('div');
-    popupContent3.classList.add('popup-content3');
+// function displayRecentlyClickedCheckboxes() {
+//     let recentlyClickedCheckboxes = JSON.parse(localStorage.getItem('recentlyClickedCheckboxes')) || [];
 
-    if (recentlyClickedCheckboxes.length > 0) {
-        let title = document.createElement('h2');
-        title.textContent = 'Recently Booked Classes';
+//     let popupContent3 = document.createElement('div');
+//     popupContent3.classList.add('popup-content3');
 
-        let checkboxList = document.createElement('ul');
+//     if (recentlyClickedCheckboxes.length > 0) {
+//         let title = document.createElement('h2');
+//         title.textContent = 'Recently Booked Classes';
 
-        recentlyClickedCheckboxes.forEach(function (checkboxData) {
-            let listItem = document.createElement('li');
-            listItem.textContent = checkboxData.label;
+//         let checkboxList = document.createElement('ul');
 
-            checkboxList.appendChild(listItem);
-        });
+//         recentlyClickedCheckboxes.forEach(function (checkboxData) {
+//             let listItem = document.createElement('li');
+//             listItem.textContent = checkboxData.label;
 
-        popupContent3.appendChild(title);
-        popupContent2.appendChild(checkboxList);
-    }   else {
-        popupContent3.textContent = 'No Recently Booked Classes';
-    }
+//             checkboxList.appendChild(listItem);
+//         });
 
-// Pop Up 3
+//         popupContent3.appendChild(title);
+//         popupContent3.appendChild(checkboxList);
+//     }   else {
+//         popupContent3.textContent = 'No Recently Booked Classes';
+//     }
 
-    let popup3 = document.createElement('div');
-    popup3.classList.add('popup3');
-    popup3.appendChild(popupContent3);
+// // Pop Up 3
 
-    document.body.appendChild(popup3);
-}
+//     let popup3 = document.createElement('div');
+//     popup3.classList.add('popup3');
+//     popup3.appendChild(popupContent3);
 
-// Event Listener for 'Bookings' Button
+//     document.body.appendChild(popup3);
+// }
 
-document.getElementById('showBookingsButton').addEventListener('click', displayRecentlyClickedCheckboxes);
+// // Event Listener for 'Bookings' Button
 
-}
+// document.getElementById('showBookingsButton').addEventListener('click', trackCheckboxSelection);
+
+// Function to display the recently checked checklists as a list on the website
+function displayRecentlyCheckedChecklists() {
+    let recentlyCheckedChecklists = JSON.parse(localStorage.getItem('recentlyCheckedChecklists')) || [];
+  
+    // Get the container element to display the checklists
+    let checklistContainer = document.getElementById('recentlyCheckedChecklists');
+  
+    // Create an unordered list element
+    let checklistList = document.createElement('ul');
+  
+    recentlyCheckedChecklists.forEach(function (checklistData) {
+      let listItem = document.createElement('li');
+      listItem.textContent = checklistData.label;
+  
+      checklistList.appendChild(listItem);
+    });
+  
+    // Clear any existing content in the container
+    checklistContainer.innerHTML = '';
+  
+    // Append the list to the container
+    checklistContainer.appendChild(checklistList);
+  }
+  
+  // Call the function to display the recently checked checklists on page load
+  displayRecentlyCheckedChecklists();
+  
+  
