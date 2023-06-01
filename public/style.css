@@ -596,6 +596,19 @@ h1 {
     background-color: #cecccc;   
 }
 
+.resetLSButton {
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    color: #3d477a;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resetLSButton:hover {
+    background-color: #cecccc;  
+}
+
 /* Media Queries */
 /* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
