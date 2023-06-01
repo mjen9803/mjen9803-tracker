@@ -7,11 +7,13 @@
 
 This project is a microsite for Mollymook Beach as a tourism destination. The purpose of the site it to provide incentive to travel to Mollymook, for the benefit of cultural, social and economic reasons. Through simple navigation and accessible guidelines, the website showcases a home, history, attractions, contact and FAQs page. These all acquire different layouts and structures to meet the needs and design patterns required in each page. 
 
-This project is a Web Application for a gym called 'CrossFit By Mali'. It is a tracking application that not only marks the users booked classes, but also provides metrics dependent on the number of sessions they book into. Through simple navigation and accessible guidelines, the web app showcases 
+This project is a Web Application for a gym called 'CrossFit By Mali'. It is a tracking application that not only marks the users booked classes, but also provides metrics dependent on the number of sessions they book into. Through simple navigation and accessible guidelines, the web app showcases options to book classes, edit bookings, clear recent bookings, return to view recent bookings, alter classes to meet certain metrics, etc. 
 
 ### How to Navigate Website
 
 The website is very simple to navigate and can be mostly done through the navigation bar at the top of the page. The home page has been seperated on this bar so it is easy to identify, as it will be the most returned to page on the website. 
+
+The website is very simple to navigate and can be mostly done through the n
 
 ### Justifications for Implementation Decisions
 

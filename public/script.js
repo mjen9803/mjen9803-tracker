@@ -38,6 +38,20 @@ const showPopup2 = () => {
     popup2.style.display = 'block';
 };
 
+// Declaring Constant Variable for the Close Button that refreshes the page but remembers the checkboxes selected through local storage
+
+const refreshButton = document.getElementById('refreshButton');
+const checkboxes2 = document.querySelectorAll('input[type="checkbox"]');
+
+// Declaring Constant Variable for the SECOND Close Button that refreshes the page but remembers the checkboxes selected through local storage
+
+const closePopup3 = document.getElementById('closePopup3');
+const checkboxes3 = document.querySelectorAll('input[type="checkbox"]');
+
+// Declaring Constant Variable for Clear Recent Bookings Button
+
+const refreshLSButton = document.getElementById('refreshLSButton');
+
 // Attemped to use Query Selectors to create more succinct code here however after a lot of trial and error it did not want to function accordingly 15/05/23
 // Declaring Event Listeners for 'On Click' interaction of 'Day Button'
 
@@ -219,7 +233,55 @@ checkboxes.forEach(function(checkbox) {
 
 window.addEventListener('load', loadSelection);
 
-// // Local Storage Element 2
+// Local Storage Element 2
+// Clears local storage through 'clear' button which allows user to reset and rebook classes
+// The below function also reloads the page when this button is clicked
+
+function resetLocalStorage() {
+    localStorage.clear();
+    alert("Bookings have been cleared.")
+}
+
+refreshLSButton.addEventListener('click', () => {
+
+    location.reload();
+})
+
+// Local Storage Element 3
+// This element refreshes the page once the booking has been made but saves the selected checkboxes so that the user can go back and check their booked classes later on
+
+refreshButton.addEventListener('click', () => {
+    
+    checkboxes2.forEach((checkbox) => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+
+    location.reload
+});
+
+checkboxes2.forEach((checkbox) => {
+    const checked = localStorage.getItem(checkbox.id) === 'true';
+    checkbox.checked = checked;
+});
+
+// Local Storage Element 4
+// This is the same element for above but I am using it for the second close button property
+
+closePopup3.addEventListener('click', () => {
+    
+    checkboxes3.forEach((checkbox) => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+
+    location.reload();
+});
+
+checkboxes3.forEach((checkbox) => {
+    const checked = localStorage.getItem(checkbox.id) === 'true';
+    checkbox.checked = checked;
+});
+
+// // Local Storage Element 5
 // // Track which checkboxes are selected and provide the user with a list of classes booked
 // // Display list on pop up
 
@@ -288,30 +350,30 @@ window.addEventListener('load', loadSelection);
 // document.getElementById('showBookingsButton').addEventListener('click', trackCheckboxSelection);
 
 // Function to display the recently checked checklists as a list on the website
-function displayRecentlyCheckedChecklists() {
-    let recentlyCheckedChecklists = JSON.parse(localStorage.getItem('recentlyCheckedChecklists')) || [];
+// function displayRecentlyCheckedChecklists() {
+//     let recentlyCheckedChecklists = JSON.parse(localStorage.getItem('recentlyCheckedChecklists')) || [];
   
-    // Get the container element to display the checklists
-    let checklistContainer = document.getElementById('recentlyCheckedChecklists');
+//     // Get the container element to display the checklists
+//     let checklistContainer = document.getElementById('recentlyCheckedChecklists');
   
-    // Create an unordered list element
-    let checklistList = document.createElement('ul');
+//     // Create an unordered list element
+//     let checklistList = document.createElement('ul');
   
-    recentlyCheckedChecklists.forEach(function (checklistData) {
-      let listItem = document.createElement('li');
-      listItem.textContent = checklistData.label;
+//     recentlyCheckedChecklists.forEach(function (checklistData) {
+//       let listItem = document.createElement('li');
+//       listItem.textContent = checklistData.label;
   
-      checklistList.appendChild(listItem);
-    });
+//       checklistList.appendChild(listItem);
+//     });
   
-    // Clear any existing content in the container
-    checklistContainer.innerHTML = '';
+//     // Clear any existing content in the container
+//     checklistContainer.innerHTML = '';
   
-    // Append the list to the container
-    checklistContainer.appendChild(checklistList);
-  }
+//     // Append the list to the container
+//     checklistContainer.appendChild(checklistList);
+//   }
   
-  // Call the function to display the recently checked checklists on page load
-  displayRecentlyCheckedChecklists();
+//   // Call the function to display the recently checked checklists on page load
+//   displayRecentlyCheckedChecklists();
   
   
