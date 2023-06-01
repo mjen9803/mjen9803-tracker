@@ -614,6 +614,14 @@ h1 {
     height: auto;
 }
 
+/* Centering the logo using external CSS (Fitzgerald, 2023). */
+
+.logo-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Media Queries */
 /* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
