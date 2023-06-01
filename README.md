@@ -3,17 +3,68 @@
 
 ## 'CrossFit By Mali - Web Application'
 
-### Project Description
+## Table of Contents
 
-This project is a microsite for Mollymook Beach as a tourism destination. The purpose of the site it to provide incentive to travel to Mollymook, for the benefit of cultural, social and economic reasons. Through simple navigation and accessible guidelines, the website showcases a home, history, attractions, contact and FAQs page. These all acquire different layouts and structures to meet the needs and design patterns required in each page. 
+### Introduction
+
+This READ ME file has been created for the Web Application 'CrossFit By Mali'. 
+This project includes a backend code for a minimal web server, has a single page architecture for the front end, is responsive on mobile and desktop devices, saves the data to the user's browser for persisent access between sessions (Local Storage), uses GitHub for version control and code repository hosting and is simple to set up and configure on a local computer. 
+This file goes into detail on how these elements have been implemented in the development of this Web Application.
+
+### Project Description
 
 This project is a Web Application for a gym called 'CrossFit By Mali'. It is a tracking application that not only marks the users booked classes, but also provides metrics dependent on the number of sessions they book into. Through simple navigation and accessible guidelines, the web app showcases options to book classes, edit bookings, clear recent bookings, return to view recent bookings, alter classes to meet certain metrics, etc. 
 
+### Getting Started
+
+#### Usage
+
+#### Prerequisites
+
+#### Installation
+
+#### Technologies Used
+
+#### License
+
+#### Application Configuration
+
+#### Deployment Procedures
+
 ### How to Navigate Website
 
-The website is very simple to navigate and can be mostly done through the navigation bar at the top of the page. The home page has been seperated on this bar so it is easy to identify, as it will be the most returned to page on the website. 
+The website is very simple to navigate and can be mostly done through a step to step booking process. This navigation is produced naturally for the user through the variety of choices they have to make through the booking process. This process can be seen below.
 
-The website is very simple to navigate and can be mostly done through the n
+1. Users must select day they would like to train. Options are:
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+
+2. Once users have selected 1+ days to train they must select their time to train. 
+Options are:
+- 6am
+- 7am
+- 8am
+- 5pm
+- 6pm
+
+3. Once they have selected 1+ checkboxes (times) to train a container will pop up below. This container obtains a 'book' button. Users will click this button to book classes for the week. 
+
+4. The first pop up will appear with metrics. These metrics are unique to the individual booking, calculated depending on the number of checkboxes selected. This can be seen via the JavaScript file under the section 'Metrics Calculations'. This is one of the tracking elements for this application. This allows users to book their classes dependent on how many calories they want to burn, reps they want to complete or kilometres they want to run for the week. From this, the user is provided with the following options.
+- Edit (Will take the user directly back to the original page to alter the booking. They can add classes, remove classes, or change times. This has been programmed that the book button will disapear until a change has been made to the original booking. When a change has been made, the 'book' button will reappear.)
+- Confirm (Will take the user to the second pop up which confirms the booking has been submitted.)
+
+5. If the user has selected 'Confirm' as per the previous step, they will be taken to the second pop up which confirms the booking has been submitted. The user then has the following options.
+- Close (Will close the pop ups, refresh the page to start position, BUT save the checkboxes selected previously. I have done this through the use of local storage. This means the user can return to the page at a later date to see which classes have been selected.)
+- Bookings List (Will again, utilise Local Storage elements to print a list of the selected classes for the week. This information will be displayed on a third pop up.)
+
+6. If the user has selected 'Bookings List' as per the previous step, they will be taken to the third pop up which presents a list of the selected classes. The user then has the following options.
+- Close (Same as above. Will close the pop ups, refresh the page to start position, BUT save the checkboxes selected previously. I have done this through the use of local storage. This means the user can return to the page at a later date to see which classes have been selected.)
+- Clear Recent Bookings (If the user would like to start their booking process again, they can make the decision to clear their recent bookings. This again, uses local storage to not only reset whatever has been saved to the browser, but also uses Event Listeners to refresh the page through clicking on the button. If they click this button they will be taken to the beginning, and will start this navigation process again.)
+
+Furthermore, I have utilised buttons and a step by step process through pop ups to form the navigation for my tracking website. 
 
 ### Justifications for Implementation Decisions
 
@@ -144,6 +195,7 @@ Design Alterations:
 - Drop up lists rather than drop down lists
 - Centered text
 
+### Changes from Web Design Mid-Fidelity Prototype to High-Fidelity Prototype & Justification
 
 ### Discussion of Further Iterations/Improvements
 
@@ -155,6 +207,17 @@ To conclude the discussion of current iterationss, I have reflected on future im
 - Designing a more high end logo
 - Adding a key word finder box
 - Adding a feedback/suggestions section
+
+TALK ABOUT THE FOLLOWING
+- MAKING THE CODE SEMANTIC FOR FUTURE DEVELOPERS
+- ADDING A BOOKING LIST USING LOCAL STORAGE
+- HOW I USED FEEDBACK FROM A3 TO MAKE FINAL EDITS
+
+### User Testing & Feedback
+
+- THINK ALOUD PROTOCOL PUT AUDIO IN
+
+### Contributing
 
 ### Design Principles and Elements
 
@@ -173,6 +236,8 @@ To conclude, this website will provide target users with all of the information 
 Descriptive code comments have been utilised in the CSS and HTML files to ensure future prototypes and developments can be easily altered dependent on certain sections of the code. 
 
 All images have been included in the file library within this replit document, and have been referenced in APA style below. Please note; dates 'retrieved' is not accurate as references were transferred to APA formatting at a later date.
+
+### Acknowledgments
 
 ### References
 
