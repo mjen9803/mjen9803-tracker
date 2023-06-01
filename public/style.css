@@ -609,6 +609,11 @@ h1 {
     background-color: #cecccc;  
 }
 
+.logo {
+    width: 100px;
+    height: auto;
+}
+
 /* Media Queries */
 /* Below is the CSS that allows the website to be both dynamic and responsive */
 @media (min-device-width: 600px) {
