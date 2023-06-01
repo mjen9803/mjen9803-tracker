@@ -89,7 +89,7 @@ Furthermore, I have utilised buttons and a step by step process through pop ups 
 
 ### Justifications for Implementation Decisions
 
-There are a few main design decisions that I made throughout the implementation process not only to improve aesthetic apeal but also to assist you in further development and navigation support. To make these decisions user feedback and testing has been undertaken, and considerations from proposal and design marks have come into consideration.
+There are design decisions that were made throughout the implementation process to both improve aesthetic apeal, and to assist in accessibility/navigation. To make these decisions user feedback and testing has been undertaken, and considerations from Mid-Fidelity design comments have come into consideration. 
 
 Firstly, a logo is used at the top of the header as a design pattern. Although this usually indicates a hyperlink to the homepage, user feedback indicated and the logo plus the home button on the navigation bar were together not necessary. So to simplify the design, the only link to the home page is through the navigation bar.
 
@@ -260,25 +260,16 @@ All images have been included in the file library within this replit document, a
 
 ### Acknowledgments
 
-### References
+### References (APA 7th)
 
-Canvas LMS. (2015). Retrieved November 9, 2022, from Sydney.edu.au website: https://canvas.sydney.edu.au/courses/44303/assignments/394774
+How to include images in Visual Studio Code HTML (Example) | Treehouse Community. (2019, August 17). Treehouse. https://teamtreehouse.com/community/how-to-include-images-in-visual-studio-code-html#:~:text=So%20assuming%20you've%20created,src%22%20attribute%20within%20that%20tag.
 
-CSS Horizontal Navigation Bar. (2022). Retrieved November 9, 2022, from W3schools.com website: https://www.w3schools.com/css/css_navbar_horizontal.asp
 
-How To Create a Dropup Menu. (2022). Retrieved November 10, 2022, from W3schools.com website: https://www.w3schools.com/howto/howto_css_dropup.asp
 
-wave line clip art png PNG image with transparent background png - Free PNG Images. (2019). Retrieved November 13, 2022, from TopPNG website: https://toppng.com/free-image/wave-line-clip-art-png-PNG-free-PNG-Images_110332
+‌
 
-‌Mollymook Golf Club | Troon.com. (2022, November 13). Retrieved November 13, 2022, from Troon website: https://www.troon.com/locations/mollymook-golf-club/
 
-‌Day, O. (2022). Mollymook Surf Beach. Retrieved November 13, 2022, from Visitnsw.com website: https://www.visitnsw.com/destinations/south-coast/jervis-bay-and-shoalhaven/mollymook/attractions/mollymook-surf-beach
 
-‌Banks, K. (2019, April 17). Mollymook Milton Ulladulla news April 2019 | Mollymook News. Retrieved November 13, 2022, from Mollymookbeachwaterfront.com.au website: https://mollymookbeachwaterfront.com.au/mollymook-news/mollymook-milton-ulladulla-quarterly-e-news/mollymook-milton-ulladulla-e-news-april-2019/
-
-‌Pigeon House Mountain Didthul walking track. (2022). Retrieved November 13, 2022, from NSW National Parks website: https://www.nationalparks.nsw.gov.au/things-to-do/walking-tracks/pigeon-house-mountain-didthul-walking-track
-
-‌HTML input tag. (2022). Retrieved November 13, 2022, from W3schools.com website: https://www.w3schools.com/tags/tag_input.asp
-
+‌
 ‌
 
