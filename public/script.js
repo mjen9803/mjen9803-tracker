@@ -1,3 +1,5 @@
+// Declaring Constant Variables for JS Elements (JavaScript Const, 2015)
+
 // Declaring Constant Variables for Actual Checkboxes
 
 const box = document.getElementById("boxImage");
@@ -28,6 +30,7 @@ const closeButton4 = document.getElementById("closeButton4");
 const closeButton5 = document.getElementById("closeButton5");
 
 // Declaring Constant Variables for the Metrics
+// (How to Create Popups, 2023)
 
 const openPopupButton = document.getElementById('openPopup');
 const popupContainer = document.getElementById('popupContainer');
@@ -54,6 +57,8 @@ const refreshLSButton = document.getElementById('refreshLSButton');
 
 // Attemped to use Query Selectors to create more succinct code here however after a lot of trial and error it did not want to function accordingly 15/05/23
 // Declaring Event Listeners for 'On Click' interaction of 'Day Button'
+// (How to Create a to Do List, 2023)
+// (JavaScript Checkbox, 2022)
 
 checklistButton.addEventListener("click", function() {
     checklist.style.display = "block";
@@ -76,6 +81,7 @@ checklistButton5.addEventListener("click", function() {
 });
 
 // Declaring Event Listeners for 'On Click' interaction of permanent 'Hover State'
+// (Pacerier, 2011)
 
 function toggleColor() {
     var button = document.getElementById('checklistButton');
@@ -83,6 +89,7 @@ function toggleColor() {
 }
 
 // Declaring Event Listeners for 'On Click' interaction of 'Hide Button'
+// (How to Hide Button in JavaScript, 2022)
 
 closeButton.addEventListener("click", function() {
     checklist.style.display = "none";
@@ -118,6 +125,8 @@ openPopup2.addEventListener('click', function() {
 });
 
 // Metrics Calculations
+// (JavaScript Arithmetic, 2015)
+// (JavaScript If Else Else If, 2015)
 
 function calculate() {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -193,6 +202,7 @@ document.getElementById('closePopup3').addEventListener('click', function() {
 // Local Storage Element 1 
 // If the user accidentally refreshes the web app before booking their classes - local storage will remember what the user has selected.
 // This means users can return to this page whenever they would like and can see the classes they have booked.
+// (Simple Checkbox to Local Storage, 2019)
 
 // Saves checkbox selection to local storage
 
@@ -236,6 +246,7 @@ window.addEventListener('load', loadSelection);
 // Local Storage Element 2
 // Clears local storage through 'clear' button which allows user to reset and rebook classes
 // The below function also reloads the page when this button is clicked
+// (Storage Clear() Method, 2023)
 
 function resetLocalStorage() {
     localStorage.clear();
@@ -266,6 +277,7 @@ checkboxes2.forEach((checkbox) => {
 
 // Local Storage Element 4
 // This is the same element for above but I am using it for the second close button property
+// (Olawanle, 2022)
 
 closePopup3.addEventListener('click', () => {
     
