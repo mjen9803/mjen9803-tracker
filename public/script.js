@@ -281,6 +281,8 @@ checkboxes3.forEach((checkbox) => {
     checkbox.checked = checked;
 });
 
+// DEVELOPMENT NOT COMPLETE - FUTURE ITERATIONS/DEVELOPMENTS NECESSARY!!!
+
 // // Local Storage Element 5
 // // Track which checkboxes are selected and provide the user with a list of classes booked
 // // Display list on pop up

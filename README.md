@@ -356,6 +356,31 @@ Design Alterations:
 
 The main change I made between my mid-fidelity original design, to my final web application product, was that I utilised pop ups for the navigation rather than switching between different pages. Although I knew I was always going to use a single page architecture for the front end, I thought I would use my HTML to make it look like different pages were being used. After looking at the difference myself and through feedback from peers, I decided a pop up navigation would leave me with a much neater and aesthetically pleasing look. 
 
+The main reason for changes between my original design and final web application, was due to a combination of user testing/feedback, peer feedback, accessibility tests, functionality tests, visual tests and tutor feedback from the original assessment. 
+
+There are design decisions that were made throughout the implementation process to both improve aesthetic apeal, and to assist in accessibility/navigation. To make these decisions user feedback and testing has been undertaken, and considerations from Mid-Fidelity design comments have come into consideration. 
+
+The main piece of feedback I received from my A2 marks, was that I should be using desktop real estate effectively. Therefore, I considered this for my final design, and spread the design out so that it looks aesthetically pleasing when on a desktop device and when making it responsive for a mobile device, everything stacks neatly on top of each other. 
+
+The main piece of feedback I received from external users, was that I should give users the option to go back to their original booking and edit it at a later date. Therefore, I utilised local storage to save the user input, this means if the page is refreshed the browser memorises and recalls the checkboxes selected so that users can go back, check their bookings and edit at a later date.
+
+In my original design, I did not consider local storage and how I was planning to use it in my final product. However, a change I have made between the original design and the final product, is utilising local storage for the following elements:
+1. Remembering the checkboxes selected so that the user can return at a later date
+2. Function to clear local storage (clear recent bookings) if they change their mind/want to begin booking system again
+3. Allows the page to be refreshed at any point and have the checkboxes saved no matter what
+4. Same function as above for multiple elements on the web app
+5. Track which checkboxes have been checked (aka which classes have been booked) and display them as a list in a pop up
+
+The 5th element in this list is a future development. This function is not currently functioning on the current prototype. This element requires further time and research to function correctly. Two models of this code can be found at the bottom of the JavaScript file. This code is commented out to make sure the rest of the JavaScript functions. Can be uncommented and continue development in future and with input from other web developers if needed. 
+
+Finally, A logo has been added at the bottom of the Web Application. My original design did not incorporate a logo. I have utilised this as a design pattern, with the purpose of establishing brand identity. Because I have used pop ups rather than multiple pages, there was no need for this logo to link back to a 'home page', it is instead used for aesthetic appeal.
+
+### User Testing & Feedback
+
+I made sure to use a variety of user testing and feedback throughout my entire development process to ensure my website functioned to the highest standard, was easy to navigate and accessible to all users on a range of devices. I made sure to test functionality, accessibility, performance and user interface. One of the main techniques I used to test my web application was a Think Aloud Protocol. I gave users a task and they were instructed to complete the task whilst speaking aloud their process in doing so. I have provided a voice recording of one of my think aloud protocols. 
+
+[Download Think Aloud Audio](https://drive.google.com/file/d/17u2S134GGwqSRFlZ910xV14EEv8R5pRk/view?usp=sharing)
+
 ### Discussion of Further Iterations/Improvements
 
 To conclude the discussion of current iterationss, I have reflected on future improvements that can be made in and with time.
@@ -375,10 +400,6 @@ TALK ABOUT THE FOLLOWING
 - FUTURE CALLED DEPLOY ON AN EXTERNAL LIVE SERVER
 - LICENSE
 - SCREEN READERS
-
-### User Testing & Feedback
-
-- THINK ALOUD PROTOCOL PUT AUDIO IN
 
 ### Contributing
 
