@@ -52,7 +52,7 @@ When a node.js project is created, it can be ran using 'npm init'. This generate
 
 #### Installation
 
-The following are installations used to support the development of this Web Application. 
+The following are installations used to support the development of this Web Application. The following section outlines the application configuration.
 
 Install Git
 1. Sign into GitHub Account
@@ -212,10 +212,6 @@ Testing:
 Licence
 Not currently applicable with the current system. May be necessary in future developments. 
 
-#### Application Configuration
-
-#### Deployment Procedures
-
 ### How to Navigate Website
 
 The website is very simple to navigate and can be mostly done through a step to step booking process. This navigation is produced naturally for the user through the variety of choices they have to make through the booking process. This process can be seen below.
@@ -228,7 +224,7 @@ The website is very simple to navigate and can be mostly done through a step to 
 - Friday
 There is also an option to select the 'hide' button underneath each day. This removes the list below and makes the booking system neater and more accessible to users. 
 
-<!-- Screenshot 1 -->
+[Start Example](1.png)
 
 2. Once users have selected 1+ days to train they must select their time to train. 
 Options are:
@@ -240,33 +236,34 @@ Options are:
 
 3. Once they have selected 1+ checkboxes (times) to train a container will pop up below. This container obtains a 'book' button. Users will click this button to book classes for the week. 
 
-<!-- Screenshot 2 -->
+[Checkbox Selection Example](2.png)
 
 4. The first pop up will appear with metrics. These metrics are unique to the individual booking, calculated depending on the number of checkboxes selected. This can be seen via the JavaScript file under the section 'Metrics Calculations'. This is one of the tracking elements for this application. This allows users to book their classes dependent on how many calories they want to burn, reps they want to complete or kilometres they want to run for the week. From this, the user is provided with the following options.
 
-<!-- Screenshot 3 (Pop up 1) -->
+[Book Button to Pop Up 1 Example](3.png)
 
 - Edit (Will take the user directly back to the original page to alter the booking. They can add classes, remove classes, or change times. This has been programmed that the book button will disapear until a change has been made to the original booking. When a change has been made, the 'book' button will reappear.)
 - Confirm (Will take the user to the second pop up which confirms the booking has been submitted.)
 
 5. If the user has selected 'Confirm' as per the previous step, they will be taken to the second pop up which confirms the booking has been submitted. The user then has the following options.
 
-<!-- Screenshot 4 (Second pop up) -->
+[Confirm Button to Pop Up 2 Example](4.png)
 
 - Close (Will close the pop ups, refresh the page to start position, BUT save the checkboxes selected previously. I have done this through the use of local storage. This means the user can return to the page at a later date to see which classes have been selected.)
 
-<!-- Screenshot 5 (refresh but save checkbox) -->
+[Refresh But Save Selected Example](5.png)
 
 - Bookings List (Will again, utilise Local Storage elements to print a list of the selected classes for the week. This information will be displayed on a third pop up.)
 
 6. If the user has selected 'Bookings List' as per the previous step, they will be taken to the third pop up which presents a list of the selected classes. The user then has the following options.
 
-<!-- Screenshot 6 (pop up 3) -->
+[Bookings List Pop Up 3 Example](6.png)
 
 - Close (Same as above. Will close the pop ups, refresh the page to start position, BUT save the checkboxes selected previously. I have done this through the use of local storage. This means the user can return to the page at a later date to see which classes have been selected.)
 - Clear Recent Bookings (If the user would like to start their booking process again, they can make the decision to clear their recent bookings. This again, uses local storage to not only reset whatever has been saved to the browser, but also uses Event Listeners to refresh the page through clicking on the button. If they click this button they will be taken to the beginning, and will start this navigation process again.)
 
-<!-- Screenshot 7 (refreshed/reset page) -->
+[Refresh Step 1 Example](7.png)
+[Refresh Step 2 Example](8.png)
 
 Furthermore, I have utilised buttons and a step by step process through pop ups to form the navigation for my tracking website. 
 
@@ -376,7 +373,6 @@ Design Alterations:
 - Changing the responsivity design of the website
 - Having one clear image rather than 2 small images
 - Made the box a lighter grey colour
-
 
 [FAQs Page Mockup](mock5.png)
 
