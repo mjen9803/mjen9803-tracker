@@ -71,7 +71,7 @@ git clone https://github.com/mjen9803/mjen9803-tracker.git
 2. Navigate to the project directory:
 cd mjen9803-tracker
 3. Install project dependencies using 'package.json' file:
-npm install
+*npm install*
 4. Start the web server using:
 npm start
 5. Open your web browser and visit 'http://localhost:1234' to view web application.
