@@ -38,7 +38,7 @@ Before running this Web Application, it is important that you obtain the followi
 
 The core prerequisites are familiarity with HTML, CSS and JavaScript Languages.
 
-### Dependencies
+#### Dependencies
 
 Dependencies are external libraries or packages that a project relies on to function correctly (Package Management Basics - Learn Web Development | MDN, 2023).
 
@@ -196,7 +196,11 @@ Version Control:
 
 Deployment:
 For the purpose of the assignment given, the website does not currently have to be deployed online with a live domain. However, it is being hosted on a website called GitHub pages. 
-GitHub allows repositories to turn into websites. It does not require a database. GitHub has saved the application through the HTML. GitHub can be used support the development of successful websites, and GitHub pages can make these applications easier to share world wide. GitHub Pages uses Static Website Hosting, which allows the repository to be turned into a website by serving static files (HTML, CSS, JavaScript, etc) directly from the repository. Some of the benefits of this is that it allows for free hosting, version control, continuous deployment, custom domains, etc. 
+
+GitHub allows repositories to turn into websites. It does not require a database. GitHub has saved the application through the HTML. GitHub can be used support the development of successful websites, and GitHub pages can make these applications easier to share world wide. 
+
+GitHub Pages uses Static Website Hosting, which allows the repository to be turned into a website by serving static files (HTML, CSS, JavaScript, etc) directly from the repository. Some of the benefits of this is that it allows for free hosting, version control, continuous deployment, custom domains, etc. 
+
 Hosting the application on GitHub Pages is a form of deployment as it makes the Web Application accessible on the internet, however it is a specific type of deployment which only focusses on static websites (Adding Locally Hosted Code to GitHub - GitHub Docs, 2023). 
 
 Testing:
@@ -207,8 +211,6 @@ Testing:
 
 Licence
 Not currently applicable with the current system. May be necessary in future developments. 
-
-#### License
 
 #### Application Configuration
 
