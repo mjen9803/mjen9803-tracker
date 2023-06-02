@@ -3,8 +3,6 @@
 
 ## 'CrossFit By Mali - Web Application'
 
-## Table of Contents
-
 ### Introduction
 
 This READ ME file has been created for the Web Application 'CrossFit By Mali'. 
@@ -14,6 +12,8 @@ This file goes into detail on how these elements have been implemented in the de
 ### Project Description
 
 This project is a Web Application for a gym called 'CrossFit By Mali'. It is a tracking application that not only marks the users booked classes, but also provides metrics dependent on the number of sessions they book into. Through simple navigation and accessible guidelines, the web app showcases options to book classes, edit bookings, clear recent bookings, return to view recent bookings, alter classes to meet certain metrics, etc. 
+
+The target audience for this web application would be members of the gym 'CrossFit By Mali' who would like to book their classes at the gym, view their metrics and set goals for themeselves dependent on these metrics. Users are able to track their progress through editing class attendence to meet certain metrics goals. 
 
 ### Getting Started
 
@@ -267,24 +267,6 @@ Options are:
 
 Furthermore, I have utilised buttons and a step by step process through pop ups to form the navigation for my tracking website. 
 
-<!-- ### Justifications for Implementation Decisions
-
-There are design decisions that were made throughout the implementation process to both improve aesthetic apeal, and to assist in accessibility/navigation. To make these decisions user feedback and testing has been undertaken, and considerations from Mid-Fidelity design comments have come into consideration. 
-
-Firstly, a logo is used at the bottom of the Web Application. My original design did not incorporate a logo. I have utilised this as a design pattern, with the purpose of establishing brand identity. Because I have used pop ups rather than multiple pages, there was no need for this logo to link back to a 'home page', it is instead used for aesthetic appeal.
-
-Secondly, markers suggested removing thick dark lines from around text, borders, navigation bars, etc; to allow for a more 'professional' look. This was the main reasoning for choosing the dotted border, as it allowed for a more sleek and realistic website look. 
-
-Thirdly, user feedback suggested that the links underneath my headings as per original designs was both messy and unnecessary. Nevertheless, it was still important that I sourced where all of my images were from, and gave users the ability to click on the image and see further information. Thus, rather than having a hyperlink to an external page, the user can click on the image and be automatically taken to the page it is sourced from, then easily return back to my website.
-
-Fourthly, in my designs, there were some pages with multiple images next to each other in each page. Although in my original designs this did look cohesive, with the other design changes I made, when I actually coded my website it did not match well. I feel as though the website now looks a lot neater and clean. 
-
-Fifthly, when it comes to the website being both responsive and dynamic, I was able to ensure the website was able to be minimised without having to change the structure of the navigation bar. On reflection, if I had more time to complete this project, and to undertake heavy testing, I would make a pop out navigation bar to give users both options, depending on what screen they are using. Until then, I was able to make all text, headings, images and the navigation bar dynamic.
-
-Finally, with the drop down lists on the FAQs page, I thought it would be easier if I just had the user hover over the questions to retrieve their answers, rather than clicking. This allows the website to close the drop up lists after reading, creating a more cohesive design. 
-
-Therefore, these are the design decisions made in the development of this project, and how they were implemented. -->
-
 ### Importance of Accessibility
 
 Accessibility is vital when it comes to the design, development and implementation of Web Applications so that they can be used by a wide audience, and remain both inclusive and ethical. The following are how design patterns and techniques have been used to allow for accessible and equal design. 
@@ -383,23 +365,30 @@ I made sure to use a variety of user testing and feedback throughout my entire d
 
 ### Discussion of Further Iterations/Improvements
 
-To conclude the discussion of current iterationss, I have reflected on future improvements that can be made in and with time.
-- Second responsivity option - pop out navigation/scrolling option
-- Extension of sharing option - connection to different social medias
-- Extension of 'Let's talk Australia' - expanding on other tourist destinations surrounding Mollymook beach
-- Attaching the 'Contact Us' information to an external data base so records can actually be collected and not just visually demonstrated
-- Designing a more high end logo
-- Adding a key word finder box
-- Adding a feedback/suggestions section
+To conclude the discussion of current iterations, I have reflected on future improvements that can be made in and with time.
+1. Semantic Code
+- For future developments, I would like to make my code completely Semantic HTML, as it would support future developers in determining the importance of context of sections in the code.
+- Although I have used semantic elements in my code, I would like to improve on this and develop it even more in the future.
 
-TALK ABOUT THE FOLLOWING
-- MAKING THE CODE SEMANTIC FOR FUTURE DEVELOPERS
-- ADDING A BOOKING LIST USING LOCAL STORAGE
-- HOW I USED FEEDBACK FROM A3 TO MAKE FINAL EDITS
-- FUTURE COULD USE A DATABASE
-- FUTURE CALLED DEPLOY ON AN EXTERNAL LIVE SERVER
-- LICENSE
-- SCREEN READERS
+2. Booking List using Local Storage
+- As discussed above, I would like to utilise local storage to make a booking list.
+- This would mean the browser would memorise which checkboxes are selected, and display this in list form within a pop up.
+- This is an element I would have added with further research and time to complete the project.
+- I have written code for this element (which is coded out at the bottom of the JS file), however it is not currently functioning.
+- I would like to make this function in the future.
+
+3. Database
+- In future developments I would create an external data base where user input would be saved.
+- This would allow the owner of 'CrossFit By Mali' to have access to this information, supporting them in running their business.
+
+4. Deploy on Live Server
+- Although it is not necessary for this assignment, in the future it would be important to consider deploying the web application on a live server with a unique domain.
+
+5. License
+- Although not necessary for this assignment, a licence to run the web application will be a necessary consideration in future developments.
+
+6. Screen Readers
+- Future developments could look at how screen readers can be implemented into the code to improve accessibility even further. 
 
 ### Contributing
 
@@ -417,11 +406,11 @@ Finally, I incorporated allignment and balance to maintain a professional lookin
 
 ### Conclusion
 
-To conclude, this website will provide target users with all of the information they are seeking, with simple navigation, equal accessibility and responsive behaviour. 
+To conclude, this web application will provide target users with all of the information they are seeking in regards to booking their classes and viewing metrics, with simple navigation, equal accessibility and responsive behaviour. 
 
-Descriptive code comments have been utilised in the CSS and HTML files to ensure future prototypes and developments can be easily altered dependent on certain sections of the code. 
+Descriptive code comments have been utilised in the CSS, JavaScript and HTML files to ensure future prototypes and developments can be easily altered dependent on certain sections of the code. 
 
-All images have been included in the file library within this replit document, and have been referenced in APA style below. Please note; dates 'retrieved' is not accurate as references were transferred to APA formatting at a later date.
+All images have been included in the file library within this Git repository, and have been referenced in APA style below. Please note; dates 'retrieved' is not accurate as references were transferred to APA 7th formatting at a later date.
 
 ### References (APA 7th)
 
