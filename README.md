@@ -267,7 +267,7 @@ Options are:
 
 Furthermore, I have utilised buttons and a step by step process through pop ups to form the navigation for my tracking website. 
 
-### Justifications for Implementation Decisions
+<!-- ### Justifications for Implementation Decisions
 
 There are design decisions that were made throughout the implementation process to both improve aesthetic apeal, and to assist in accessibility/navigation. To make these decisions user feedback and testing has been undertaken, and considerations from Mid-Fidelity design comments have come into consideration. 
 
@@ -283,7 +283,7 @@ Fifthly, when it comes to the website being both responsive and dynamic, I was a
 
 Finally, with the drop down lists on the FAQs page, I thought it would be easier if I just had the user hover over the questions to retrieve their answers, rather than clicking. This allows the website to close the drop up lists after reading, creating a more cohesive design. 
 
-Therefore, these are the design decisions made in the development of this project, and how they were implemented.
+Therefore, these are the design decisions made in the development of this project, and how they were implemented. -->
 
 ### Importance of Accessibility
 
@@ -304,99 +304,57 @@ Finally, I have ensured that the website is both responsive and dynamic, so that
 
 ### Comparisons between Mockups and Prototype
 
-[Home Page Mockup](mock1.png)
+[Home Page Original Design](og1.png)
 
 vs
 
-[Home Page Final](final3.png)
+[Start Page Final Design](1.png)
 
 Design Alterations:
-- Removing thick black lines around borders
-- Removing unncessary search bar
-- Removing unnessary like button
-- Removing unncessary share button
-- Thinner, more professional navigation bar
-- Removing caption underneath video
-- Removing blue container
-- Adding dotted border
-- Changing the responsivity design of the website
+- Removed profile box (consideration for future development)
+- Removed boxes for three options (booking, class history, metrics) - turned into pop ups instead - allowed for easier navigation
+- Removed background image as it again looked too busy and distracting
 
-[History Page Mockup](mock2.png)
+[Booking Page Original Design](og2.png)
 
 vs
 
-[History Page Final](final2.png)
+[Booking Container Final Design](2.png)
 
 Design Alterations:
-- Removing thick black lines around borders
-- Removing unncessary search bar
-- Removing unnessary like button
-- Removing unncessary share button
-- Thinner, more professional navigation bar
-- Removing caption underneath image
-- Removing blue container
-- Adding dotted border
-- Changing the responsivity design of the website
-- Having one clear image rather than 3 small images
+- Removed 'Booking' heading and changed it to 'CrossFit By Mali' (kept design consistency but removed unnecessary headings)
+- Wrote out full word for weekdays rather than just the first letter
+- Made hover state a rectangle rather than a circle (fit better with full word)
+- Removed 'comments for your coach' - users said it was unnecessary 
+- Removed back arrow as there is no longer a home page - instead have 'close' button
 
-[Attractions Page Mockup](mock3.png)
+[Metrics Page Original Design](mock4.png)
 
 vs
 
-[Attractions Page Final](final1.png)
+[Metrics Pop Up Final Design](final5.png)
 
 Design Alterations:
-- Removing thick black lines around borders
-- Removing unncessary search bar
-- Removing unnessary like button
-- Removing unncessary share button
-- Thinner, more professional navigation bar
-- Removing caption underneath image
-- Removing blue container
-- Adding dotted border
-- Changing the responsivity design of the website
+- Metrics are written in pop up - this allows users to view their metrics and alter bookings to meet certain goals for the week
+- Removed boxes as having too many containers in a pop up looked too busy and distracting
+- Removed background image as it again looked too busy and distracting
 
-[Contact Us Page Mockup](mock4.png)
+[Class History Page Original Design](og3.png)
 
 vs
 
-[Contact Us Page Final](final5.png)
+[Bookings List Pop Up Final Design](6.png)
 
 Design Alterations:
-- Removing thick black lines around borders
-- Removing unncessary search bar
-- Removing unnessary like button
-- Removing unncessary share button
-- Thinner, more professional navigation bar
-- Removing caption underneath image
-- Removing blue container
-- Adding dotted border
-- Changing the responsivity design of the website
-- Having one clear image rather than 2 small images
-- Made the box a lighter grey colour
-
-[FAQs Page Mockup](mock5.png)
-
-vs
-
-[FAQs Page Final](final6.png)
-
-Design Alterations:
-- Added a confirmation page as seen [here](final4.png)
-- Removing thick black lines around borders
-- Removing unncessary search bar
-- Removing unnessary like button
-- Removing unncessary share button
-- Thinner, more professional navigation bar
-- Removing caption underneath image
-- Removing blue container
-- Adding dotted border
-- Changing the responsivity design of the website
-- Spacing out the text and text boxes evenly (allowing for a more professional design)
-- Drop up lists rather than drop down lists
-- Centered text
+- Used a pop up rather than external page
+- Added 'clear recent bookings' button
+- Removed 'previously attended classes' - users said it was unnecessary and didnt relate to data input
+- Added 'edit' button to previous pop up - made more navigational sense as per user feedback
+- Removed back arrow as there is no longer a home page - instead have 'close' button
 
 ### Changes from Web Design Mid-Fidelity Prototype to High-Fidelity Prototype & Justification
+
+The main change I made between my mid-fidelity original design, to my final web application product, was that I utilised pop ups for the navigation rather than switching between different pages. Although I knew I was always going to use a single page architecture for the front end, I thought I would use my HTML to make it look like different pages were being used. After looking at the difference myself and through feedback from peers, I decided a pop up navigation would leave me with a much neater and aesthetically pleasing look. 
 
 ### Discussion of Further Iterations/Improvements
 
