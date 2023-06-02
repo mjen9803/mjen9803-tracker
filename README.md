@@ -271,7 +271,7 @@ Furthermore, I have utilised buttons and a step by step process through pop ups 
 
 There are design decisions that were made throughout the implementation process to both improve aesthetic apeal, and to assist in accessibility/navigation. To make these decisions user feedback and testing has been undertaken, and considerations from Mid-Fidelity design comments have come into consideration. 
 
-Firstly, a logo is used at the top of the header as a design pattern. Although this usually indicates a hyperlink to the homepage, user feedback indicated and the logo plus the home button on the navigation bar were together not necessary. So to simplify the design, the only link to the home page is through the navigation bar.
+Firstly, a logo is used at the bottom of the Web Application. My original design did not incorporate a logo. I have utilised this as a design pattern, with the purpose of establishing brand identity. Because I have used pop ups rather than multiple pages, there was no need for this logo to link back to a 'home page', it is instead used for aesthetic appeal.
 
 Secondly, markers suggested removing thick dark lines from around text, borders, navigation bars, etc; to allow for a more 'professional' look. This was the main reasoning for choosing the dotted border, as it allowed for a more sleek and realistic website look. 
 
@@ -287,19 +287,20 @@ Therefore, these are the design decisions made in the development of this projec
 
 ### Importance of Accessibility
 
-Accessibility is vital when it comes to the design, development and implementation of websites. The following are how design patterns and techniques have been used to allow for accessible and equal design. 
+Accessibility is vital when it comes to the design, development and implementation of Web Applications so that they can be used by a wide audience, and remain both inclusive and ethical. The following are how design patterns and techniques have been used to allow for accessible and equal design. 
 
-Firstly, vision impairment and equal access throughout this website has been a large consideration. Contrasting colours have been used to ensure there is a light background against dark text, making the paragraphing stand out more, and allowing it to be easier to read. 
+Firstly, vision impairment and equal access throughout this website has been a large consideration. Contrasting colours have been used to ensure there is a light background against dark text, making the paragraphing stand out more. This can be seen through using a dark blue against white, or a light gray against black. 
 
-Secondly, I have included audio boxes in which read out the paragraphs through a text to speech function. This allows those with severe visual impairment to still have equal access to the content on the site. 
+Secondly, I have made sure to have clear button names that are easy to understand and interupt. Therefore, if a text to speech function is utilised, those with vidual impairment will have equal access to the content on the site, and will be able to still book without additional assistance. 
 
-Thirdly, large headers with underlines have been used to make it clear the subject lines of each web page. This makes it easier for viewers to quickly find the content and information they are looking for without scanning the paragraphs. 
+Thirdly, I have used large headers with underlines and bold text to make the subject lines clear throughout the application. This makes it easier for viewers to quickly find the content and information they are looking for without scanning the rest of the application. 
 
-Fourthly, I have used hover colour changing for a few elements on my website, in particular the navigation bar, to make it clear where the users cursor is placed, thus improving accessibility. This could also be effective with future developments, with the potential use of screen readers. 
+Fourthly, I have utilised hover colour changing states for all buttons on the website, in particular the button options on the pop ups. This makes is clear where the users curor is placed, thus improving accessiility. This could also be effective with future developments, with the potential use of screen readers.
 
-Fifthly, I have decided to use singular large images on each page, so everybody that views my website can see this in clear detail.
+Finally, I have ensured that the website is both responsive and dynamic, so that users can choose what display screen they would like to view the website. This means that it can be minimised and expanded to certain dimensions and not ruin the entire structure and layout. Photos of these two display sizes can be found below.
 
-Finally, I have ensured that the website is both responsive and dynamic, so that users can choose what display screen they would like to view the website. This means it can be minimised and expanded to certain dimensions and not ruin the structure and layout.
+[Desktop Device](desktop.png)
+[Mobile Device](mobile.png)
 
 ### Comparisons between Mockups and Prototype
 
@@ -415,12 +416,15 @@ TALK ABOUT THE FOLLOWING
 - FUTURE COULD USE A DATABASE
 - FUTURE CALLED DEPLOY ON AN EXTERNAL LIVE SERVER
 - LICENSE
+- SCREEN READERS
 
 ### User Testing & Feedback
 
 - THINK ALOUD PROTOCOL PUT AUDIO IN
 
 ### Contributing
+
+All contributions for future modifications are welcomed and appreciated. 
 
 ### Design Principles and Elements
 
@@ -439,8 +443,6 @@ To conclude, this website will provide target users with all of the information 
 Descriptive code comments have been utilised in the CSS and HTML files to ensure future prototypes and developments can be easily altered dependent on certain sections of the code. 
 
 All images have been included in the file library within this replit document, and have been referenced in APA style below. Please note; dates 'retrieved' is not accurate as references were transferred to APA formatting at a later date.
-
-### Acknowledgments
 
 ### References (APA 7th)
 
