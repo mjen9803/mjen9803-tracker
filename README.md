@@ -73,7 +73,7 @@ cd mjen9803-tracker
 3. Install project dependencies using 'package.json' file:
 *npm install*
 4. Start the web server using:
-npm start
+*npm start*
 5. Open your web browser and visit 'http://localhost:1234' to view web application.
 
 Note: node.js and npm (Node Package Manager) must be installed on machine before installation steps can be complete (Downloading and Installing Node.js and Npm | Npm Docs, 2023). Steps to do this are below:
@@ -81,54 +81,54 @@ Note: node.js and npm (Node Package Manager) must be installed on machine before
 2. Download installer
 3. Run installer and follow installation wizard instructions
 4. Open terminal and type following commands 
-- node -v
-- npm -v
+- *node -v*
+- *npm -v*
 
 Note: package.json is not something that is installed directly, it is a file that you create to manage node.js. As briefly discussed in the 'dependencies' section - to create a package.json file we can do the following.
 1. Open terminal
 2. Run the command:
-- npm init
+- *npm init*
 3. Provide information about project
 4. Npm will then generate a 'package.json' file with specified metadata.
 5. To install the dependencies listed in 'package.json' file you can run the command:
-- npm install
+- *npm install*
 
 Further Note: package-lock.json file is automatically generated when the command above 'npm install' is called. It provides deterministic and repoducible builds by locking some of the installed dependencies. It allows for faster and more reliable installations, and allows files to be enables offline or when the device is disconnected from internet connection (Package-Lock.json | Npm Docs, 2023). 
 
 Installing Dependencies (Express) (Week 6 Content: DECO2017 Advanced Web Design, 2015):
 1. Open VS code terminal
 2. Run this command: 
-- npm install express
+- *npm install express*
 3. In the server.js file import express file 
-- const express = require('express')
+- *const express = require('express')*
 4. Initialise express framework 
-- const app = express();
+- *const app = express();*
 5. Serve static files from public folder
-- app.use(express.static('public'));
+- *app.use(express.static('public'));*
 5. Serve the index file for the root path 
-- app.get('/', function(req, res) {
+- *app.get('/', function(req, res) {
  res.sendFile(__dirname + '/public/index.html')
-})
+})*
 6. Start the server & log a message to the console
-- let server = app.listen(8888, function(){
+- *let server = app.listen(8888, function(){
  console.log("App server is running on port 8888");
-});
+});*
 7. Run the command
-- node server.js
+- *node server.js*
 8. Open browser & test
 9. Add changes to git and commit 
 10. In 'package.json' file add new property called 'start':
--  "scripts": {
+-  *"scripts": {
     "start": "node server.js"
-  },
+  },*
 11. Start web server
-- npm run start
+- *npm run start*
 
 Note: before we sync changes with git we have installed an additional file called '.gitignore'. This will organise any folders that should not be uploaded to git, which could take up unnecessary space and bandwidth. 
 1. Visit: https://github.com/github/gitignore/blob/main/Node.gitignore
 2. Copy template into file and save
 3. Commit new changes to git:
-- git push
+- *git push*
 
 Install Parcel
 Parcel is a web application that makes the process of building and bundling web application assets such as JavaScript, CSS and HTML much easier. It automates the bundling process and provides a straightforward configuration setup (Yang, 2022). The main purposes and features of Parcel include (Week 8 Content: DECO2017 Advanced Web Design, 2015):
@@ -140,18 +140,18 @@ Parcel is a web application that makes the process of building and bundling web 
 - Provides a plugin system
 The steps to install are as follows:
 1. Install using following command
-- npm install --save-dev parcel
+- *npm install --save-dev parcel*
 2. Delete main entry point (remove line)
-- "main": "index.js",
+- *"main": "index.js",*
 3. Add following scripts to package.json file
-- "prestart": "parcel build ./public/index.html",
-"dev": "parcel serve ./public/index.html"
+- *"prestart": "parcel build ./public/index.html",
+"dev": "parcel serve ./public/index.html"*
 4. Update the folder to server static files in server.js file
-- app.use(express.static(__dirname + '/dist'));
+- *app.use(express.static(__dirname + '/dist'));*
 5. Change the file to serve for the root directory
-- res.sendFile(__dirname + '/dist/index.html')
+- *res.sendFile(__dirname + '/dist/index.html')*
 6. Test
-- npm run dev
+- *npm run dev*
 
 Install SCSS
 SCSS (Sass) is a commonly used preprocessor that extends the capabilities of regular CSS. It's main features are as follows (Magnolia International Ltd, 2020):
@@ -161,14 +161,14 @@ SCSS (Sass) is a commonly used preprocessor that extends the capabilities of reg
 - Allows you to use mixins for reusable blocks of CSS
 The steps to install are as follows (Week 8 Content: DECO2017 Advanced Web Design, 2015):
 1. Install using the following command
-- npm install sass
-2. Make a file in public folder called style.scss (includes typography, layout, etc.)
+- *npm install sass*
+2. Make a file in public folder called style.*scss (includes typography, layout, etc.)*
 3. Import modules into main scss file (if necessary)
 4. Run in server
-- npm run dev
+- *npm run dev*
 5. Begin styling with CSS
 6. Save file and test
-- npm run dev
+- *npm run dev*
 
 #### Technologies Used
 
