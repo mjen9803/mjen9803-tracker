@@ -402,7 +402,7 @@ Firstly, the main principle I have used is contrast, particuarly through the use
 
 Secondly, I have again used space. It continued to be important for me that the content on my website was not too close together. In this case, I have used many breaks in the code, and borders to ensure this was the case. 
 
-Finally, I incorporated allignment and balance to maintain a professional looking website. I ensured that all of my images, text, headings and videos were aligned correctly and looked aesthetically pleasing. 
+Finally, I incorporated allignment and balance to maintain a professional looking website. I ensured that all of my images, text, headings and containers were aligned correctly and looked aesthetically pleasing. 
 
 ### Conclusion
 
@@ -415,6 +415,8 @@ All images have been included in the file library within this Git repository, an
 ### References (APA 7th)
 
 #### All references below are cited throughout the HTML, CSS and JavaScript files through the use of comments
+
+#### All references that are cited throught the HTML, CSS and Javascript are websites that supported my understanding of Web Design and Code
 
 How to include images in Visual Studio Code HTML (Example) | Treehouse Community. (2019, August 17). Treehouse. https://teamtreehouse.com/community/how-to-include-images-in-visual-studio-code-html#:~:text=So%20assuming%20you've%20created,src%22%20attribute%20within%20that%20tag.
 
@@ -447,6 +449,37 @@ Week 8 Content: DECO2017 Advanced Web Design. (2015). Sydney.edu.au. https://can
 Magnolia International Ltd. (2020). IMPORTANCE OF SCSS. Codeit.mk. https://codeit.mk/home/followUs/blog/IMPORTANCE-OF-SCSS.html#:~:text=SCSS%20allows%20variables%20%E2%80%94%20Avoid%20repeating,than%20repeating%20the%20color%20value.
 
 Adding locally hosted code to GitHub - GitHub Docs. (2023). GitHub Docs. https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
+
+JavaScript const. (2015). W3schools.com. https://www.w3schools.com/js/js_const.asp
+
+How To Create a To Do List. (2023). W3schools.com. https://www.w3schools.com/howto/howto_js_todolist.asp
+
+‌JavaScript Checkbox. (2022, January 8). JavaScript Tutorial. https://www.javascripttutorial.net/javascript-dom/javascript-checkbox/
+
+‌How to Hide Button in JavaScript. (2022). Linuxhint.com. https://linuxhint.com/hide-button-javascript/
+
+‌Pacerier. (2011, June 20). How to trigger CSS “hover state” using Javascript? Stack Overflow. https://stackoverflow.com/questions/6406976/how-to-trigger-css-hover-state-using-javascript
+
+‌JavaScript Arithmetic. (2015). W3schools.com. https://www.w3schools.com/js/js_arithmetic.asp
+
+‌JavaScript if else else if. (2015). W3schools.com. https://www.w3schools.com/js/js_if_else.asp
+
+How To Create Popups. (2023). W3schools.com. https://www.w3schools.com/howto/howto_js_popup.asp
+
+‌How To Create Popups. (2023). W3schools.com. https://www.w3schools.com/howto/howto_js_popup.asp
+
+‌Simple Checkbox to Local Storage. (2019). CodePen. https://codepen.io/kylastoneberg/pen/qweppq
+
+‌Storage clear() Method. (2023). W3schools.com. https://www.w3schools.com/jsref/met_storage_clear.asp
+
+‌Olawanle, J. (2022, June 27). Refresh the Page in JavaScript – JS Reload Window Tutorial. FreeCodeCamp.org; freeCodeCamp.org. https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/#:~:text=How%20to%20Refresh%20a%20Page,method%20responsible%20for%20page%20reloading.
+
+‌
+‌
+
+
+
+‌
 
 ‌
 
